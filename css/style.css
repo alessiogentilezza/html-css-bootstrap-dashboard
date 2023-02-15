@@ -1,7 +1,7 @@
 :root {
     --ms_header-color: #2c3e50;
-    --ms_green-color: rgb(26, 188, 156);
-    --ms_blue-color: #2c3e50;
+    /* --ms_green-color: rgb(26, 188, 156); */
+    --ms_blue-color: #051e34;
 
 }
 
@@ -37,6 +37,12 @@ header {
 header {
     height: 70px;
 }
+main {
+    height: calc(100vh - 70px);
+    overflow: hidden;
+    background-color: aquamarine;
+
+}
 
 .ms_tool{
     height: 70px;
@@ -58,6 +64,50 @@ header {
 .col-1 i {
     /* padding: 0 5px; */
 }
+
+
+#sidebar {
+    height: calc(100vh - 70px);
+    width: 50px;
+    background-color: var(--ms_blue-color);
+    color: #ffffff;
+    text-align: center;
+    overflow-y: hidden;
+
+}
+
+#sidebar i {
+    font-size: 25px;
+    margin-top: 20px;
+}
+
+.sidebar-top {
+    height: calc(100% - 40px);
+    overflow-y: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.sidebar-bottom {
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+
+}
+
+.side-flex {
+    display: flex;
+    align-items: center;
+    position: relative;
+
+}
+
+
 
 
 
