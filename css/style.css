@@ -10,8 +10,13 @@
 /* REGOLE DI DEBUG */
 
 .box {
-    height: 70px;
+    height: 300px;
     border: 3px red dashed;
+}
+.box2 {
+    height: 30px;
+    border: 3px rgb(2, 0, 0) solid;
+    margin: 20px;
 }
 
 .ms_border {
@@ -127,7 +132,26 @@ main {
     min-width: 180px;
 }
 
+
+#content {
+    width: calc(100% - 50px);
+    overflow-y: auto;
+    background-color: #98b0dd;
+    /* padding: 0 10px; */
+}
+#content .top-bar {
+    height: 100px;
+    background-color: #1b72e8;
+    /* padding: 0 10px; */
+}
+
+
+
+
+
+
 /* MEDIA */
+
 @media screen and (max-width: 575px) {
 
     .col-auto {
@@ -161,6 +185,11 @@ main {
     .col-auto .ms_dsp-block {
         display: none;
     }
+
+    #content {
+        width: calc(100% - 200px);
+    }
+
 }
 
 
@@ -173,14 +202,7 @@ main {
     } */
 
 
-    /* .content {
-        width: calc(100% - 200px);
-    }
 
-
-
-
-}
 
 @media screen and (min-width: 768px) {
 
