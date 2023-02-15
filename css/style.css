@@ -13,22 +13,16 @@
     height: 70px;
     border: 3px red dashed;
 }
+
 .ms_border {
     border: 3px red dashed;
 }
 
 
 header {
-    background-color: var(--ms_header-color);
-
+    /* background-color: var(--ms_header-color);
+ */
 }
-
-
-
-
-
-
-
 
 
 
@@ -37,6 +31,7 @@ header {
 header {
     height: 70px;
 }
+
 main {
     height: calc(100vh - 70px);
     overflow: hidden;
@@ -44,27 +39,29 @@ main {
 
 }
 
-.ms_tool{
+.ms_tool {
     height: 70px;
     display: inline-block;
-    color: white;
+    color: #5b5858;
     vertical-align: middle;
     line-height: 70px;
 }
 
-.ms_notify{
+.ms_tool i {
+    padding: 0 5px;
+
+}
+
+.ms_notify {
     height: 70px;
     display: inline-block;
     color: white;
     vertical-align: middle;
     line-height: 70px;
     color: orange;
-}
+    padding: 0 5px;
 
-.col-1 i {
-    /* padding: 0 5px; */
 }
-
 
 #sidebar {
     height: calc(100vh - 70px);
@@ -76,16 +73,23 @@ main {
 
 }
 
+/* .icon-content {
+    width: 40px;
+    height: 40px;
+    background-color: orange;
+    justify-content: center;
+    align-items: center;
+} */
 #sidebar i {
     font-size: 25px;
-    /* margin-top: 20px; */
-    padding: 20px;
+    padding: 20px 0;
 }
 
 #sidebar a {
     text-decoration: none;
     color: white;
     line-height: 25px;
+    padding: 20px;
 }
 
 
@@ -111,12 +115,33 @@ main {
 .side-flex {
     display: flex;
     align-items: center;
-    position: relative;
+    /* position: relative; */
+    justify-content: center;
+
+}
+
+.ms_logo_small{
+    max-width: 50px;
+}
+.ms_logo_big {
+    min-width: 180px;
+}
+
+/* MEDIA */
+@media screen and (max-width: 575px) {
+
+    .col-auto {
+        padding: 0;
+    }
+
+
 
 }
 
 
-/* MEDIA */
+
+
+
 
 @media screen and (min-width: 576px) {
 
@@ -125,26 +150,34 @@ main {
         padding: 10px;
     }
 
-    .side-flex {
+    #sidebar a {
+        display: block;
+        /* text-align: left; */
+    }
+
+    .col-auto .ms_dsp-none {
+        display: block;
+    }
+    .col-auto .ms_dsp-block {
+        display: none;
+    }
+}
+
+
+
+    /* .side-flex {
         display: flex;
         align-items: center;
         position: relative;
 
-    }
+    } */
 
-    .ms_dsp-none {
-        display: block;
-        /* text-align: left; */
-    }
 
     /* .content {
         width: calc(100% - 200px);
     }
 
 
-    /* .ms_dsp-block {
-        display: none;
-    } */
 
 
 }
@@ -179,12 +212,11 @@ main {
 
 /* UTILITY */
 
-.ms_dsp-block {
-    display: block;
+    .ms_dsp-block {
+        display: block;
 
-}
+    }
 
-.ms_dsp-none {
-    display: none;
-}
-
+    .ms_dsp-none {
+        display: none;
+    }
