@@ -42,14 +42,24 @@
 
                 </div>
                 <div class="col-auto">
-                    <span class="ms_tool">
+                    <div class="ms_tool d-none d-lg-inline-block">
                         <i class="fa-solid fa-list-ul"></i>
                         <i class="fa-solid fa-circle-question"></i>
                         <i class="fa-solid fa-ellipsis-vertical"></i>
-                    </span>
-                    <span class="ms_notify">
-                        <a href="#"><i class="fa-solid fa-bell"></i></a>
-                    </span>
+                    </div>
+
+                    <div class="dropdown ms_notify">
+                        <button class="btn btn-secondary bg-transparent border-0 px-1" type="button"
+                            data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-bell"></i>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Profilo</a></li>
+                            <li><a class="dropdown-item" href="#">Fatturazione</a></li>
+                            <li><a class="dropdown-item" href="#">Logout</a></li>
+                        </ul>
+                    </div>
+
+
                 </div>
             </div>
         </div>
@@ -93,7 +103,8 @@
                         <span>Nuovo studente</span><a href="#"><i class="fa-regular fa-square-plus"></i></a>
                     </div>
 
-                    <div class="col-12 col-md-4 col-lg-auto d-flex flex-column justify-content-center ms_first order-md-1">
+                    <div
+                        class="col-12 col-md-4 col-lg-auto d-flex flex-column justify-content-center ms_first order-md-1">
 
                         <div class="d-flex align-items-center">
                             <h4 class="pe-2">Boolean</h4><button type="button" class="btn btn-primary btn-sm">Piano
