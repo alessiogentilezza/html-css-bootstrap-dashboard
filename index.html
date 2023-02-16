@@ -24,8 +24,8 @@
         <div class="container-fluid h-100">
             <div class="row align-items-center h-100">
                 <div class="col-auto h-100 d-flex align-items-center">
-                    <img src="img/mobile-logo.png" class="d-md-none ms_logo_small" alt="">
-                    <img src="img/logo.svg" class="d-none d-md-block ms_logo_big" alt="">
+                    <img src="img/mobile-logo.png" class="d-lg-none ms_logo_small" alt="">
+                    <img src="img/logo.svg" class="d-none d-lg-block ms_logo_big" alt="">
                 </div>
                 <div class="col">
 
@@ -61,16 +61,16 @@
             <section class="sidebar-top">
                 <div class="side-flex">
                     <i class="fa-solid fa-house"></i>
-                    <a class="d-none d-md-block" href="#">Home</a>
+                    <a class="d-none d-lg-block" href="#">Home</a>
                 </div>
 
                 <div class="side-flex">
                     <i class="fa-solid fa-chart-simple"></i>
-                    <a class="d-none d-md-block" href="#">Stats</a>
+                    <a class="d-none d-lg-block" href="#">Stats</a>
                 </div>
                 <div class="side-flex">
                     <i class="fa-solid fa-signal"></i>
-                    <a class="d-none d-md-block" href="#">Signals</a>
+                    <a class="d-none d-lg-block" href="#">Signals</a>
                 </div>
 
             </section>
@@ -79,7 +79,7 @@
 
                 <div class="side-flex">
                     <i class="fa-solid fa-gear"></i>
-                    <a class="d-none d-md-block" href="#">Admin</a>
+                    <a class="d-none d-lg-block" href="#">Admin</a>
                 </div>
 
             </section>
@@ -89,8 +89,8 @@
             <div class="top-bar container-fluid px-2 py-2">
                 <div class="row g-2 text-white">
 
-                    
-                    <div class="col-12 col-lg-7 d-flex flex-column justify-content-center ms_first ms_border">
+
+                    <div class="col-12 col-md-4 col-lg-8 d-flex flex-column justify-content-center ms_first ms_border order-sm-2">
 
                         <div class="d-flex align-items-center">
                             <h4 class="pe-2">Boolean</h4><button type="button" class="btn btn-primary btn-sm">Piano
@@ -100,9 +100,14 @@
                         <div class="d-flex align-items-center">
                             <button type="button" class="btn btn-primary btn-sm m-0">3 app</button> <i
                                 class="fa-solid fa-angles-right text-white px-1"></i>
-                            <button type="button" class="btn btn-primary btn-sm">Bolean mobile app</button>
-                            <button type="button" class="btn btn-primary btn-sm">Boolean web app</button>
-                            <button type="button" class="btn btn-primary btn-sm">Boolean blog app</button>
+                            <button type="button" class="btn btn-primary btn-sm d-lg-none">+</button>
+
+                            <button type="button" class="btn btn-primary btn-sm d-none d-lg-block">Bolean mobile
+                                app</button>
+                            <button type="button" class="btn btn-primary btn-sm d-none d-lg-block">Boolean web
+                                app</button>
+                            <button type="button" class="btn btn-primary btn-sm d-none d-lg-block">Boolean blog
+                                app</button>
                         </div>
 
                         <!-- <nav aria-label="breadcrumb">
@@ -121,12 +126,12 @@
 
                     </div>
 
-                    <div class="col ms_second ms_border">
+                    <div class="col-12 col-md-4 col-lg-2 ms_second ms_border order-sm-3">
                         <p class="m-0">Studenti online negli ultimi 30 minuti</p>
                         <p class="m-0 fs-2">125</p>
                     </div>
 
-                    <div class="col ms_third ms_border">
+                    <div class="col-12 col-md-4 col-lg-2 ms_third text-end ms_border order-sm-1">
                         <span>Nuovo studente</span><a href="#"><i class="fa-regular fa-square-plus"></i></a>
                     </div>
                 </div>
