@@ -7,7 +7,7 @@
 
 /* REGOLE DI DEBUG */
 
-.box {
+/* .box {
     height: 90px;
     border: 3px red dashed;
 }
@@ -21,12 +21,7 @@
 .ms_border {
     border: 3px red dashed;
 }
-
-
-
-/* UTILITY */
-
-
+ */
 
 /* REGOLE CSS */
 
@@ -74,8 +69,6 @@ main {
     background-color: var(--ms_blue-color);
     color: #ffffff;
     text-align: center;
-    padding: 10px;
-
 
 }
 
@@ -109,6 +102,10 @@ main {
 .side-flex {
     display: flex;
     align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+
 }
 
 .ms_logo_small {
@@ -169,20 +166,20 @@ main {
 	--bs-offcanvas-width: 100%;
 }
 
-.overlay {
-    background-color: rgba(255, 255, 255);
+.overlayer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: all 0.2s ease-in-out;
+    opacity: 0;
+    background-color: rgba(255, 255, 255, 0.5);
 }
 
-.side-flex:hover {
-    display: block;
+.overlayer:hover {
+    opacity: 1;
 }
-
-
-
-
-
-
-
 
 
 /* MEDIA */
@@ -192,13 +189,9 @@ main {
     .col-auto {
         padding: 0;
     }
-
 }
 
-
 @media screen and (min-width: 992px) {
-
-
 
     #sidebar {
         width: 150px;
