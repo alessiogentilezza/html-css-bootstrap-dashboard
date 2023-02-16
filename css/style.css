@@ -151,8 +151,6 @@ main {
 }
 
 
-
-
 .btn.btn-primary.btn-sm {
     border-radius: 20px;
     margin-right: 5px;
@@ -161,14 +159,22 @@ main {
 }
 
 
-.ms_third a {
-    font-size: 20px;
+.ms_third i {
+    font-size: 25px;
     margin-left: 5px;
     color: #ffffff;
 }
 
 .offcanvas, .offcanvas-lg, .offcanvas-md, .offcanvas-sm, .offcanvas-xl, .offcanvas-xxl {
 	--bs-offcanvas-width: 100%;
+}
+
+.overlay {
+    background-color: rgba(255, 255, 255);
+}
+
+.side-flex:hover {
+    display: block;
 }
 
 

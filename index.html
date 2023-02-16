@@ -102,45 +102,99 @@
                     <div class="col-12 col-md-4 col-lg-1 ms_third order-md-3">
                         <span>Nuovo studente</span>
 
-
-
                         <button class="btn btn-primary p-0" type="button" data-bs-toggle="offcanvas"
-                            data-bs-target="#staticBackdrop" aria-controls="staticBackdrop"><i class="fa-regular fa-square-plus"></i>
+                            data-bs-target="#staticBackdrop" aria-controls="staticBackdrop"><i
+                                class="fa-regular fa-square-plus"></i>
                         </button>
 
-                        <div class="offcanvas offcanvas-end" data-bs-backdrop="static" tabindex="-1"
-                            id="staticBackdrop" aria-labelledby="staticBackdropLabel">
+                        <div class="offcanvas offcanvas-end" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop"
+                            aria-labelledby="staticBackdropLabel">
                             <div class="offcanvas-header">
                                 <h5 class="offcanvas-title" id="staticBackdropLabel">Inserisci un nuovo studente</h5>
                                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
                                     aria-label="Close"></button>
                             </div>
                             <div class="offcanvas-body">
-                                <div>
-                                  
+                                <forms>
+
 
                                     <div class="mb-3">
                                         <label for="exampleFormControlInput1" class="form-label">Nome</label>
-                                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="nome">
-                                      </div>
+                                        <input type="text" class="form-control" id="exampleFormControlInput1"
+                                            placeholder="nome">
+                                    </div>
 
-                                      <div class="mb-3">
+                                    <div class="mb-3">
                                         <label for="exampleFormControlInput1" class="form-label">Cognome</label>
-                                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="cognome">
-                                      </div>
+                                        <input type="text" class="form-control" id="exampleFormControlInput1"
+                                            placeholder="cognome">
+                                    </div>
 
-                                      <div class="mb-3">
-                                        <label for="exampleFormControlInput1" class="form-label">Email</label>
-                                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="email">
-                                      </div>
 
-                                      <div class="mb-3">
+                                    <span><label for="exampleFormControlInput1" class="form-label">Email</label></span>
+                                    <div class="input-group mb-3">
+                                        <span class="input-group-text" id="basic-addon1">@</span>
+                                        <input type="text" class="form-control" placeholder="email" aria-label="Email"
+                                            aria-describedby="basic-addon1">
+                                    </div>
+
+                                    <div class="mb-3">
                                         <label for="exampleFormControlInput1" class="form-label">Password</label>
-                                        <input type="password" class="form-control" id="exampleFormControlInput1" placeholder="password">
-                                      </div>
-                                          
+                                        <input type="password" class="form-control" id="exampleFormControlInput1"
+                                            placeholder="password">
+                                    </div>
 
-                                </div>
+                                    <div class="mb-3">
+                                        <label for="exampleFormControlInput1" class="form-label">Indirizzo</label>
+                                        <input type="text" class="form-control" id="exampleFormControlInput1"
+                                            placeholder="indirizzo">
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label for="exampleFormControlInput1" class="form-label">Città</label>
+                                        <input type="text" class="form-control" id="exampleFormControlInput1"
+                                            placeholder="città">
+                                    </div>
+
+
+                                    <span><label for="exampleFormControlInput1" class="form-label">Stato</label></span>
+
+                                    <div class="mb-3">
+                                        <select class="form-select" aria-label="Default select example">
+                                            <option selected>Scegli</option>
+                                            <option value="1">Italia</option>
+                                            <option value="2">Francia</option>
+                                            <option value="3">Germania</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label for="exampleFormControlInput1" class="form-label">CAP</label>
+                                        <input type="text" class="form-control" id="exampleFormControlInput1"
+                                            placeholder="cap">
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label for="formFile" class="form-label">Foto</label>
+                                        <input class="form-control" type="file" id="formFile">
+                                    </div>
+
+
+                                    <div class="list-group-item mb-3">
+                                        <input class="form-check-input me-1" type="checkbox" value=""
+                                            id="firstCheckbox">
+                                        <label class="form-check-label" for="firstCheckbox">Seleziona per
+                                            proseguire</label>
+                                    </div>
+
+
+                                    <div class="mb-3">
+                                        <input type="submit" value="Salva" class="btn btn-primary"></input>
+                                        <input type="reset" value="Svuota" class="btn btn-warning"></input>
+
+                                    </div>
+
+                                </forms>
                             </div>
                         </div>
                     </div>
