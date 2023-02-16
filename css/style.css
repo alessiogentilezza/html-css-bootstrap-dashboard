@@ -39,6 +39,9 @@ header {
 .ms_dsp-none {
     display: none;
 }
+.ms_dsp-none-lg {
+    display: none;
+}
 
 /* REGOLE CSS */
 
@@ -86,6 +89,8 @@ main {
     background-color: var(--ms_blue-color);
     color: #ffffff;
     text-align: center;
+    padding: 10px;
+
     /* overflow-y: hidden; */
 
 }
@@ -123,16 +128,14 @@ main {
 .sidebar-bottom {
     height: 40px;
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
 }
 
 .side-flex {
     display: flex;
     align-items: center;
     /* position: relative; */
-    justify-content: center;
+    /* justify-content: center; */
 
 }
 
@@ -230,7 +233,6 @@ main {
 
     #sidebar {
         width: 200px;
-        padding: 10px;
     }
 
     #sidebar a {
