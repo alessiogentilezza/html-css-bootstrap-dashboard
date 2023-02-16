@@ -99,12 +99,55 @@
             <div class="top-bar container-fluid px-2 py-2">
                 <div class="row g-2 text-white">
 
-                    <div class="col-12 col-md-4 col-lg-2 ms_third order-md-3">
-                        <span>Nuovo studente</span><a href="#"><i class="fa-regular fa-square-plus"></i></a>
+                    <div class="col-12 col-md-4 col-lg-1 ms_third order-md-3">
+                        <span>Nuovo studente</span>
+
+
+
+                        <button class="btn btn-primary p-0" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#staticBackdrop" aria-controls="staticBackdrop"><i class="fa-regular fa-square-plus"></i>
+                        </button>
+
+                        <div class="offcanvas offcanvas-end" data-bs-backdrop="static" tabindex="-1"
+                            id="staticBackdrop" aria-labelledby="staticBackdropLabel">
+                            <div class="offcanvas-header">
+                                <h5 class="offcanvas-title" id="staticBackdropLabel">Inserisci un nuovo studente</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                <div>
+                                  
+
+                                    <div class="mb-3">
+                                        <label for="exampleFormControlInput1" class="form-label">Nome</label>
+                                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="nome">
+                                      </div>
+
+                                      <div class="mb-3">
+                                        <label for="exampleFormControlInput1" class="form-label">Cognome</label>
+                                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="cognome">
+                                      </div>
+
+                                      <div class="mb-3">
+                                        <label for="exampleFormControlInput1" class="form-label">Email</label>
+                                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="email">
+                                      </div>
+
+                                      <div class="mb-3">
+                                        <label for="exampleFormControlInput1" class="form-label">Password</label>
+                                        <input type="password" class="form-control" id="exampleFormControlInput1" placeholder="password">
+                                      </div>
+                                          
+
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
-                    <div
-                        class="col-12 col-md-4 col-lg-auto d-flex flex-column justify-content-center ms_first order-md-1">
+
+
+                    <div class="col-12 col-md-4 col-lg-7 d-flex flex-column justify-content-center ms_first order-md-1">
 
                         <div class="d-flex align-items-center">
                             <h4 class="pe-2">Boolean</h4><button type="button" class="btn btn-primary btn-sm">Piano
@@ -126,7 +169,7 @@
 
                     </div>
 
-                    <div class="col-12 col-md-4 col-lg-3 ms_second order-md-2">
+                    <div class="col-12 col-md-4 col-lg-4 ms_second order-md-2">
                         <p class="m-0">Studenti online negli ultimi 30 minuti</p>
                         <p class="m-0 fs-2">125</p>
                     </div>
