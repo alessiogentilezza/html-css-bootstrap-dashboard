@@ -162,6 +162,22 @@ main {
 
 
 
+/* .ms_first {
+    color: white;
+}
+.ms_second {
+    color: white;
+}
+.ms_third {
+    color: white;
+} */
+
+.ms_third a {
+    font-size: 30px;
+    padding: 0 5px;
+    color: #ffffff;
+}
+
 
 
 
@@ -204,23 +220,3 @@ main {
 }
 
 @media screen and (min-width: 992px) {}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
