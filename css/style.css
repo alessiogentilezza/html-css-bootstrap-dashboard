@@ -126,7 +126,7 @@ main {
 }
 
 #content .top-bar {
-    height: 100px;
+    /* height: 100px; */
     background-color: #1b72e8;
 }
 
@@ -149,6 +149,24 @@ main {
     height: 25px;
     display: inline-block;
 }
+
+
+
+
+.btn.btn-primary.btn-sm {
+    border-radius: 20px;
+    margin-right: 10px;
+    padding: 2px;
+    background-color: #165bba;
+}
+
+
+
+
+
+
+
+
 
 
 
