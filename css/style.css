@@ -4,6 +4,10 @@
 
 }
 
+ body {
+    font-family: 'Montserrat', sans-serif;
+}
+
 
 /* REGOLE DI DEBUG */
 
@@ -32,16 +36,15 @@ header {
 main {
     height: calc(100vh - 70px);
     overflow: hidden;
-    background-color: aquamarine;
 
 }
 
 .ms_tool {
-    height: 70px;
+    /* height: 70px; */
+    /* line-height: 70px; */
     display: inline-block;
     color: #5b5858;
     vertical-align: middle;
-    line-height: 70px;
 }
 
 .ms_tool i {
@@ -50,11 +53,10 @@ main {
 }
 
 .ms_notify {
-    height: 70px;
+    /* height: 70px; */
+    /* line-height: 70px; */
     display: inline-block;
-    color: white;
     vertical-align: middle;
-    line-height: 70px;
     padding: 0 5px;
 }
 
@@ -69,7 +71,7 @@ main {
     background-color: var(--ms_blue-color);
     color: #ffffff;
     text-align: center;
-    background-image:url(../img/sidebar-bg.png);
+    background-image: url(../img/sidebar-bg.png);
 
 }
 
@@ -104,9 +106,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative;
     width: 100%;
-
 }
 
 .ms_logo_small {
@@ -120,11 +120,10 @@ main {
 #content {
     width: calc(100% - 50px);
     overflow-y: auto;
-    background-color: #98b0dd;
+    background-color: #f8f9fa;
 }
 
 #content .top-bar {
-    /* height: 100px; */
     background-color: #1b72e8;
 }
 
@@ -163,23 +162,19 @@ main {
     color: #ffffff;
 }
 
-.offcanvas, .offcanvas-lg, .offcanvas-md, .offcanvas-sm, .offcanvas-xl, .offcanvas-xxl {
-	--bs-offcanvas-width: 100%;
+.offcanvas,
+.offcanvas-lg,
+.offcanvas-md,
+.offcanvas-sm,
+.offcanvas-xl,
+.offcanvas-xxl {
+    --bs-offcanvas-width: 100%;
 }
 
-.overlayer {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+.side-flex:hover {
     transition: all 0.2s ease-in-out;
-    opacity: 0;
     background-color: rgba(255, 255, 255, 0.5);
-}
 
-.overlayer:hover {
-    opacity: 1;
 }
 
 
@@ -210,9 +205,14 @@ main {
         text-align: right;
     }
 
-    .offcanvas, .offcanvas-lg, .offcanvas-md, .offcanvas-sm, .offcanvas-xl, .offcanvas-xxl {
+    .offcanvas,
+    .offcanvas-lg,
+    .offcanvas-md,
+    .offcanvas-sm,
+    .offcanvas-xl,
+    .offcanvas-xxl {
         --bs-offcanvas-width: 50%;
     }
-    
+
 
 }
